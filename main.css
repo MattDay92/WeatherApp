@@ -1,0 +1,11 @@
+.container{
+    background-color: rgb(101, 169, 252);
+    background-image: url(/images/sunny.jpeg);
+    border-radius: 3%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
