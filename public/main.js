@@ -36,7 +36,7 @@ navigator.geolocation.getCurrentPosition(async (pos) => {
 
 const getLocation = async (city, state, country) => {
 
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},${state},${country}&limit=1&appid=7d1bb47c46fd0c755d7d92c0c15dcc1c`
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${state},${country}&limit=1&appid=7d1bb47c46fd0c755d7d92c0c15dcc1c`
     res = await fetch(url)
     data = await res.json()
 

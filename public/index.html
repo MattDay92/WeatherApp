@@ -17,7 +17,7 @@
 <body>
   <div id="container" class="container col-8 my-5 py-5 object-fit-cover">
     <div class="row d-flex justify-content-center text-center">
-      <div class="col-4">
+      <div class="col-4 text-center d-flex justify-content-center">
         <form id="locationForm">
           <input type="text" id="cityName" name="cityName" class="form-control" placeholder="City">
           <input type="text" id="stateName" name="stateName" class="form-control" placeholder="State">
@@ -34,5 +34,24 @@
   </div>
   <div class="row 5dayWeatherCard"></div>
   <script src="main.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA-ZhHv22OVnYofj97NE7G6-Y7a1pWGjbY",
+      authDomain: "weather-a4f7b.firebaseapp.com",
+      projectId: "weather-a4f7b",
+      storageBucket: "weather-a4f7b.appspot.com",
+      messagingSenderId: "414313113387",
+      appId: "1:414313113387:web:a03ba67af540dfd983476e"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 </html>
